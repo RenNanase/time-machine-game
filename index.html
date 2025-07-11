@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Time Machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Time Machine</h1>
+        <p>Welcome, Time Traveler!</p>
+    </header>
+
+    <main class="container">
+        <div class="dashboard">
+            <div class="dashboard-section">
+                <h2><i class="fas fa-calendar-alt"></i> Current Year</h2>
+                <p id="current-year-display">2024</p>
+            </div>
+
+            <div id="controls" class="dashboard-section">
+                <h2><i class="fas fa-sliders-h"></i> Travel Controls</h2>
+                <div class="travel-controls">
+                    <button id="backward-travel-btn" title="Travel to the Past"><i class="fas fa-fast-backward"></i> Past</button>
+                    <button id="pause-btn" title="Pause Travel"><i class="fas fa-pause"></i></button>
+                    <button id="forward-travel-btn" title="Travel to the Future">Future <i class="fas fa-fast-forward"></i></button>
+                </div>
+                <div class="manual-controls">
+                    <button id="back-btn" title="Go Back 1 Year"><i class="fas fa-chevron-left"></i></button>
+                    <button id="forward-btn" title="Go Forward 1 Year"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div id="filter" class="dashboard-section">
+                <h2><i class="fas fa-filter"></i> Filter Events</h2>
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="politic">Politics</option>
+                    <option value="science">Science</option>
+                    <option value="culture">Culture</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+
+            <div id="secondary-actions" class="dashboard-section">
+                <button id="journal-btn"><i class="fas fa-book"></i> Journal</button>
+                <button id="achievements-btn"><i class="fas fa-trophy"></i> Achievements</button>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div id="data-category"></div>
+    </main>
+
+    <!-- Journal Modal (hidden by default) -->
+    <div id="journal-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-journal" class="close-button">&times;</span>
+            <h2><i class="fas fa-book-open"></i> Timeline Journal</h2>
+            <ul>
+                <!-- Journal entries will be populated by script.js -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Achievements Modal (hidden by default) -->
+    <div id="achievements-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-achievements" class="close-button">&times;</span>
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <ul id="achievements-list">
+                <!-- Achievements will be populated here by script.js -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Paradox Warning Modal (hidden by default) -->
+    <div id="paradox-modal" class="modal hidden">
+        <div class="modal-content paradox-warning">
+            <span id="close-paradox" class="close-button">&times;</span>
+            <h2><i class="fas fa-exclamation-triangle"></i> PARADOX DETECTED!</h2>
+            <p id="paradox-message">You have altered the timeline in a critical way!</p>
+            <p>Brace for temporal displacement...</p>
+        </div>
+    </div>
+
+    <!-- Achievement Unlock Toast Notification -->
+    <div id="achievement-toast" class="hidden"></div>
+
+    <!-- Timeline Fracture Overlay -->
+    <div id="fracture-overlay" class="hidden">
+        <p>⚠️ Timeline fractured. Recalibrating…</p>
+    </div>
+
+    <!-- Event Collapse Overlay -->
+    <div id="collapse-overlay" class="hidden">
+        <p>⏳ Timeline instability detected. Events are fading...</p>
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</html>

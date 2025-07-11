@@ -1,0 +1,74 @@
+[
+    {
+        "year": 1945,
+        "category": "politic",
+        "title": "End of World War II",
+        "description": "The war in Europe concludes with the surrender of Germany in May, followed by the surrender of Japan in September, ending the deadliest conflict in human history.",
+        "id": "pol1945",
+        "type": "event"
+    },
+    {
+        "year": 1440,
+        "category": "technology",
+        "title": "Invention of the Printing Press",
+        "description": "Johannes Gutenberg introduces mechanical movable type printing to Europe, sparking the Printing Revolution.",
+        "id": "tech1440",
+        "type": "event"
+    },
+    {
+        "year": 1903,
+        "category": "technology",
+        "title": "First Successful Airplane Flight",
+        "description": "The Wright brothers, Orville and Wilbur, achieve the first sustained, controlled, and powered heavier-than-air flight.",
+        "id": "tech1903",
+        "type": "event"
+    },
+    {
+        "year": 1928,
+        "category": "science",
+        "title": "Discovery of Penicillin",
+        "description": "Alexander Fleming discovers the antibiotic substance penicillin from the Penicillium notatum mould.",
+        "id": "sci1928",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Fall of the Berlin Wall",
+        "description": "The Berlin Wall, a symbol of the Cold War, is opened, leading to the reunification of Germany.",
+        "id": "pol01989",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Tiananmen Square Massacre",
+        "description": "Chinese troops opened fire on peaceful student-led pro-democracy protests in Beijing, resulting in hundreds (possibly thousands) of deaths.",
+        "id": "pol11989",
+        "type": "event"
+    },
+    {
+        "year": 1955,
+        "category": "paradox",
+        "title": "Temporal Contamination",
+        "description": "You introduced a modern smartphone to 1955, causing a severe timeline disruption. The future is now uncertain.",
+        "id": "paradox1955",
+        "type": "paradox"
+    },
+    {
+        "year": -40000,
+        "category": "paradox",
+        "title": "Premature Enlightenment",
+        "description": "You taught early humans how to create and control fire thousands of years ahead of schedule. Their societal development has become dangerously accelerated.",
+        "id": "paradox-40000",
+        "type": "paradox"
+    },
+    {
+        "year": 1495,
+        "category": "paradox",
+        "title": "Da Vinci's Anomaly",
+        "description": "You left a solar-powered calculator in Leonardo da Vinci's workshop. His inventions are now centuries ahead of their time, causing technological chaos.",
+        "id": "paradox1495",
+        "type": "paradox"
+    }
+]

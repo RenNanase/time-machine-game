@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00aaff;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+    margin-bottom: 0;
+    /* Animation Prep */
+    opacity: 0;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-top: 5px;
+    /* Animation Prep */
+    opacity: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard {
+    flex: 1;
+    background: rgba(23, 23, 38, 0.8);
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    position: relative; /* Needed for z-index to work */
+    z-index: 60; /* Place dashboard above the vortex overlay (z-index: 50) */
+    /* Animation Prep */
+    opacity: 0;
+}
+
+.dashboard-section {
+    background: #1a1a2e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.dashboard h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00aaff;
+    margin-top: 0;
+    border-bottom: 1px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+#current-year-display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #39ff14;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+#data-category {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: rgba(23, 23, 38, 0.8);
+    border: 1px solid #4a4a70;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animation Prep */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.2);
+    border-color: #00aaff;
+}
+
+.event-card h2 {
+    color: #e0e0e0;
+    margin-top: 0;
+}
+
+.travel-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.manual-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.no-events {
+    color: #888;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard button,
+.dashboard select {
+    background-color: #0d0d1a;
+    color: #00aaff;
+    border: 1px solid #00aaff;
+    padding: 10px 15px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.dashboard button:hover,
+.dashboard select:hover {
+    background-color: #00aaff;
+    color: #1a1a2e;
+    box-shadow: 0 0 10px #00aaff;
+}
+
+.dashboard button:active {
+    transform: translateY(1px);
+}
+
+.travel-controls button {
+    width: auto; /* Allow travel buttons to size to content */
+    flex-grow: 1;
+}
+
+#filter label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#category-filter {
+    -webkit-appearance: none; /* Removes default chrome and safari style */
+    -moz-appearance: none; /* Removes default firefox style */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="\%2300aaff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    padding-right: 30px; /* Make space for the arrow */
+}
+
+#secondary-actions {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#secondary-actions button {
+    flex-grow: 1; /* Make buttons share space equally */
+    background-color: #00aaff;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+.manual-controls button {
+    padding: 5px 10px;
+}
+
+/* Achievement Unlock Toast */
+#achievement-toast {
+    position: fixed;
+    bottom: -100px; /* Start off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00aaff;
+    color: #1a1a2e;
+    padding: 15px 25px;
+    border-radius: 10px;
+    z-index: 200;
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
+    text-align: left;
+    transition: bottom 0.5s ease-in-out;
+}
+
+#achievement-toast.show {
+    bottom: 40px; /* Slide in */
+}
+
+#achievement-toast .toast-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+#achievement-toast .toast-description {
+    margin: 0;
+}
+
+/* Achievements Modal & List */
+#achievements-list {
+    list-style: none;
+    padding: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#achievements-list li {
+    background: #1a1a2e;
+    border: 1px solid #4a4a70;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+#achievements-list li.unlocked {
+    border-left: 5px solid #39ff14;
+}
+
+#achievements-list li h3 {
+    margin: 0 0 5px 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #e0e0e0;
+}
+
+#achievements-list li.locked {
+    opacity: 0.5;
+}
+
+/* Paradox Styles */
+.paradox-warning {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+.paradox-warning h2, .paradox-warning i {
+    color: #ff4d4d;
+    text-shadow: 0 0 10px #ff4d4d;
+}
+
+.event-card[data-type="paradox"] {
+    border-color: #ff4d4d;
+    background: rgba(40, 20, 20, 0.8);
+}
+
+.event-card[data-type="paradox"]:hover {
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Screen Shake Animation */
+body.screen-shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Timeline Fracture Overlay */
+#fracture-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 250; /* On top of everything */
+    background-color: rgba(255, 0, 0, 0.1);
+    pointer-events: none; /* Don't block clicks */
+}
+
+#fracture-overlay:not(.hidden) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fracture-overlay p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #ff4d4d;
+    text-shadow: 0 0 15px #ff4d4d;
+}
+
+/* Event Collapse Styles */
+#collapse-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 250; /* On top of everything */
+    background-color: rgba(0, 170, 255, 0.1);
+    pointer-events: none; /* Don't block clicks */
+}
+
+#collapse-overlay:not(.hidden) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#collapse-overlay p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #00aaff;
+    text-shadow: 0 0 15px #00aaff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Generic Modal Styles */
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a2e;
+    margin: auto;
+    padding: 20px 40px;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.2);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Journal List Styles */
+#journal-modal ul {
+    list-style: none;
+    padding: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#journal-modal li {
+    padding: 10px;
+    border-bottom: 1px solid #4a4a70;
+}
+
+#journal-modal li:last-child {
+    border-bottom: none;
+}
+
+#journal-modal .log-paradox {
+    color: #ff4d4d;
+}
+
+#journal-modal .log-achievement {
+    color: #39ff14;
+}
+
+.event-card.faded {
+    opacity: 0.15 !important; /* Use !important to override GSAP inline styles */
+    transform: scale(0.95);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}

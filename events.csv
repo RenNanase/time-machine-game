@@ -1,0 +1,9 @@
+﻿﻿year,category,title,description,id,type
+1945,politic,"End of World War II","The war in Europe concludes with the surrender of Germany in May, followed by the surrender of Japan in September, ending the deadliest conflict in human history.",pol1945,event
+1440,technology,"Invention of the Printing Press","Johannes Gutenberg introduces mechanical movable type printing to Europe, sparking the Printing Revolution.",tech1440,event
+1903,technology,"First Successful Airplane Flight","The Wright brothers, Orville and Wilbur, achieve the first sustained, controlled, and powered heavier-than-air flight.",tech1903,event
+1928,science,"Discovery of Penicillin","Alexander Fleming discovers the antibiotic substance penicillin from the Penicillium notatum mould.",sci1928,event
+1989,politic,"Fall of the Berlin Wall","The Berlin Wall, a symbol of the Cold War, is opened, leading to the reunification of Germany.",pol1989,event
+1955,paradox,"Temporal Contamination","You introduced a modern smartphone to 1955, causing a severe timeline disruption. The future is now uncertain.",paradox1955,paradox
+-40000,paradox,"Premature Enlightenment","You taught early humans how to create and control fire thousands of years ahead of schedule. Their societal development has become dangerously accelerated.",paradox-40000,paradox
+1495,paradox,"Da Vinci's Anomaly","You left a solar-powered calculator in Leonardo da Vinci's workshop. His inventions are now centuries ahead of their time, causing technological chaos.",paradox1495,paradox
