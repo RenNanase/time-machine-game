@@ -44,6 +44,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Functions ---
 
+    function initParticles() {
+        tsParticles.load("particles-js", {
+            fpsLimit: 60,
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                    resize: true,
+                },
+                modes: {
+                    repulse: {
+                        distance: 100,
+                        duration: 0.4,
+                    },
+                },
+            },
+            particles: {
+                color: {
+                    value: "#00aaff",
+                },
+                links: {
+                    color: "#00aaff",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1,
+                },
+                collisions: {
+                    enable: true,
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: "out",
+                    random: false,
+                    speed: 1,
+                    straight: false,
+                },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                size: { value: { min: 1, max: 3 } },
+            },
+        });
+    }
+
     /**
      * Animate out existing cards, then render a new list of events.
      * @param {Array<Object>} eventsToRender - The array of event objects to display.
@@ -357,6 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function initializeGame() {
+        initParticles();
         yearDisplay.textContent = currentYear;
 
         // Animate the static parts of the UI
