@@ -3,7 +3,18 @@
 1440,technology,"Invention of the Printing Press","Johannes Gutenberg introduces mechanical movable type printing to Europe, sparking the Printing Revolution.",tech1440,event
 1903,technology,"First Successful Airplane Flight","The Wright brothers, Orville and Wilbur, achieve the first sustained, controlled, and powered heavier-than-air flight.",tech1903,event
 1928,science,"Discovery of Penicillin","Alexander Fleming discovers the antibiotic substance penicillin from the Penicillium notatum mould.",sci1928,event
-1989,politic,"Fall of the Berlin Wall","The Berlin Wall, a symbol of the Cold War, is opened, leading to the reunification of Germany.",pol1989,event
+1989,politic,"Fall of the Berlin Wall","East Germany opened its borders on November 9, 1989, allowing citizens to freely cross into West Berlin. The Berlin Wall, a Cold War symbol, was torn down, marking the collapse of communism in Eastern Europe.",pol1989a,event
+1989,politic,"Tiananmen Square Massacre","On June 4, 1989, the Chinese government violently suppressed pro-democracy protests in Beijing, resulting in hundreds or possibly thousands of deaths.",pol1989b,event
+1989,politic,"Velvet Revolution in Czechoslovakia","A peaceful protest movement that began in November 1989 led to the fall of the communist government in Czechoslovakia, transitioning the country to democracy.",pol1989c,event
+1989,politic,"Collapse of Communist Regimes in Eastern Europe","In 1989, communist governments in Poland, Hungary, Bulgaria, and Romania fell one after another as democratic movements spread throughout the region.",pol1989d,event
+1989,politic,"Poland Holds Semi-Free Elections","In June 1989, Poland held partially free elections, leading to the victory of Solidarity and marking the beginning of the end for communist rule in the country.",pol1989e,event
+1989,politic,"Hungary Opens Border with Austria","In May 1989, Hungary dismantled its border fence with Austria, allowing East Germans to flee to the West—one of the first cracks in the Iron Curtain.",pol1989f,event
+1989,politic,"Execution of Nicolae Ceaușescu","On December 25, 1989, Romanian dictator Nicolae Ceaușescu and his wife were executed after a revolution that overthrew the communist regime.",pol1989g,event
+1989,politic,"Reunification Talks Begin in Germany","Following the fall of the Berlin Wall, East and West Germany initiated discussions that eventually led to reunification in 1990.",pol1989h,event
+1989,politic,"End of One-Party Rule in Bulgaria","In November 1989, longtime Bulgarian leader Todor Zhivkov was removed from power, signaling the end of communist rule in Bulgaria.",pol1989i,event
+1989,politic,"Baltic Independence Movements Rise","In 1989, Estonia, Latvia, and Lithuania intensified efforts for independence from the Soviet Union, organizing mass protests and human chains.",pol1989j,event
+1989,politic,"Malta Summit Ends Cold War","In December 1989, U.S. President George H. W. Bush and Soviet leader Mikhail Gorbachev met at the Malta Summit, effectively declaring the Cold War over.",pol1989k,event
+1989,politic,"South African Reforms Begin","In 1989, F.W. de Klerk became President of South Africa and began dismantling apartheid, signaling the start of a major political transformation.",pol1989l,event
 1955,paradox,"Temporal Contamination","You introduced a modern smartphone to 1955, causing a severe timeline disruption. The future is now uncertain.",paradox1955,paradox
 -40000,paradox,"Premature Enlightenment","You taught early humans how to create and control fire thousands of years ahead of schedule. Their societal development has become dangerously accelerated.",paradox-40000,paradox
 1495,paradox,"Da Vinci's Anomaly","You left a solar-powered calculator in Leonardo da Vinci's workshop. His inventions are now centuries ahead of their time, causing technological chaos.",paradox1495,paradox

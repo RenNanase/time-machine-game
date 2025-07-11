@@ -35,16 +35,96 @@
         "year": 1989,
         "category": "politic",
         "title": "Fall of the Berlin Wall",
-        "description": "The Berlin Wall, a symbol of the Cold War, is opened, leading to the reunification of Germany.",
-        "id": "pol01989",
+        "description": "East Germany opened its borders on November 9, 1989, allowing citizens to freely cross into West Berlin. The Berlin Wall, a Cold War symbol, was torn down, marking the collapse of communism in Eastern Europe.",
+        "id": "pol1989a",
         "type": "event"
     },
     {
         "year": 1989,
         "category": "politic",
         "title": "Tiananmen Square Massacre",
-        "description": "Chinese troops opened fire on peaceful student-led pro-democracy protests in Beijing, resulting in hundreds (possibly thousands) of deaths.",
-        "id": "pol11989",
+        "description": "On June 4, 1989, the Chinese government violently suppressed pro-democracy protests in Beijing, resulting in hundreds or possibly thousands of deaths.",
+        "id": "pol1989b",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Velvet Revolution in Czechoslovakia",
+        "description": "A peaceful protest movement that began in November 1989 led to the fall of the communist government in Czechoslovakia, transitioning the country to democracy.",
+        "id": "pol1989c",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Collapse of Communist Regimes in Eastern Europe",
+        "description": "In 1989, communist governments in Poland, Hungary, Bulgaria, and Romania fell one after another as democratic movements spread throughout the region.",
+        "id": "pol1989d",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Poland Holds Semi-Free Elections",
+        "description": "In June 1989, Poland held partially free elections, leading to the victory of Solidarity and marking the beginning of the end for communist rule in the country.",
+        "id": "pol1989e",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Hungary Opens Border with Austria",
+        "description": "In May 1989, Hungary dismantled its border fence with Austria, allowing East Germans to flee to the West—one of the first cracks in the Iron Curtain.",
+        "id": "pol1989f",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Execution of Nicolae Ceaușescu",
+        "description": "On December 25, 1989, Romanian dictator Nicolae Ceaușescu and his wife were executed after a revolution that overthrew the communist regime.",
+        "id": "pol1989g",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Reunification Talks Begin in Germany",
+        "description": "Following the fall of the Berlin Wall, East and West Germany initiated discussions that eventually led to reunification in 1990.",
+        "id": "pol1989h",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "End of One-Party Rule in Bulgaria",
+        "description": "In November 1989, longtime Bulgarian leader Todor Zhivkov was removed from power, signaling the end of communist rule in Bulgaria.",
+        "id": "pol1989i",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Baltic Independence Movements Rise",
+        "description": "In 1989, Estonia, Latvia, and Lithuania intensified efforts for independence from the Soviet Union, organizing mass protests and human chains.",
+        "id": "pol1989j",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "Malta Summit Ends Cold War",
+        "description": "In December 1989, U.S. President George H. W. Bush and Soviet leader Mikhail Gorbachev met at the Malta Summit, effectively declaring the Cold War over.",
+        "id": "pol1989k",
+        "type": "event"
+    },
+    {
+        "year": 1989,
+        "category": "politic",
+        "title": "South African Reforms Begin",
+        "description": "In 1989, F.W. de Klerk became President of South Africa and began dismantling apartheid, signaling the start of a major political transformation.",
+        "id": "pol1989l",
         "type": "event"
     },
     {
